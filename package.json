@@ -1,5 +1,5 @@
 {
-  "name": "RandomBaba",
+  "name": "PranaYoga",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brunopgalvao/randombaba.git"
+    "url": "https://github.com/brunopgalvao/pranayoga.git"
   },
   "author": "Bruno Galvao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brunopgalvao/randombaba/issues"
+    "url": "https://github.com/brunopgalvao/pranayoga/issues"
   },
-  "homepage": "https://github.com/brunopgalvao/randombaba",
+  "homepage": "https://github.com/brunopgalvao/pranayoga",
   "dependencies": {
     "angular": "^1.3.15",
     "angular-animate": "^1.3.15",

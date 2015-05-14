@@ -7,7 +7,7 @@
   require('angular-animate');
   var mainCtrl = require('./controllers/mainctrl');
 
-  angular.module('RandomBaba', ['ngRoute', 'ngAnimate'])
+  angular.module('PranaYoga', ['ngRoute', 'ngAnimate'])
 
   .config([
     '$locationProvider',

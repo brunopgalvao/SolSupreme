@@ -54,7 +54,7 @@ gulp.task('connect', function () {
 gulp.task('connectDist', function () {
   connect.server({
     root: 'dist/',
-    port: 9999
+    port: 9998
   });
 });
 gulp.task('browserify', function() {

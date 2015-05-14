@@ -1,5 +1,4 @@
-# RandomBaba
-##### Minimal Quotes
+# PranaYoga
 
 - AngularJS
 - Bower 
