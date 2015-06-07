@@ -1,0 +1,136 @@
+body
+{
+  background: white;
+  font: 28px/1.55 Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  padding: 0px 20px;
+  text-align: center;
+}
+h1
+{
+  border-bottom: 2px solid;
+  border-color: black;
+  border-top: 2px solid;
+  font: 18px/1 Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin: 0px;
+  margin-bottom: %;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0px;
+  position: center;
+}
+h2
+{
+  font-size: 25px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: -5%;
+  padding-left: 40px;
+  padding-top: 200px;
+  text-align: left;
+}
+h3
+{
+  font-size: 25px;
+  margin-bottom: 50px;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 5%;
+  padding-left: 40px;
+  padding-top: 200px;
+  text-align: left;
+}
+table, th, td
+{
+  border: 2px solid black;
+  border-collapse: collapse;
+  border-left: 0px;
+  border-right: 0px;
+  margin-bottom: -16%;
+  margin-left: 10%;
+  padding: 10px;
+}
+footer
+{
+  position: bottom;
+}
+.email
+{
+  float: left;
+  font-size: 20px;
+  padding-left: 134px;
+}
+.location
+{
+  float: right;
+  font-size: 20px;
+  padding-right: 134px;
+}
+.floated_img
+{
+  float: left;
+  padding: 75px;
+  padding-left: 220px;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+#container
+{
+  min-height: 100%;
+  position: relative;
+}
+#body
+{
+  padding: 10px;
+  padding-bottom: 75%;
+}
+#footer
+{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.section
+{
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+}
+.col
+{
+  display: inline-block;
+  margin: 1px 1px 1px 1px;
+  padding: 10%;
+  padding-top: %;
+}
+.col:first-child
+{
+  margin-left: 0;
+}
+.group:before,
+ .group:after
+{
+  content: "";
+  display: table;
+}
+.group:after
+{
+  clear: both;
+}
+.group
+{
+  zoom: 1;
+}
+@media only screen and (max-width: 480px)
+{
+  .col
+  {
+    margin: 1% 1% 1% 1%;
+  }
+  .span1, .span2,
+  {
+    width: 100%;
+  }
+}
