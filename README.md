@@ -1,4 +1,4 @@
-# RandomBaba
+# PranaYoga
 ##### Minimal Quotes
 
 - AngularJS
