@@ -1,5 +1,5 @@
-# PranaYoga
-##### Minimal Quotes
+# SolSupreme
+##### Blog
 
 - AngularJS
 - Bower 

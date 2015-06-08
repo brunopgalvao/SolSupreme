@@ -7,7 +7,7 @@
   require('angular-animate');
   var mainCtrl = require('./controllers/mainctrl');
 
-  angular.module('PranaYoga', ['ngRoute', 'ngAnimate'])
+  angular.module('SolSupreme', ['ngRoute', 'ngAnimate'])
 
   .config([
     '$locationProvider',
@@ -17,7 +17,7 @@
       // routes
       $routeProvider
         .when("/", {
-          templateUrl: "./partials/partial1.html",
+          templateUrl: "./partials/blog.html",
           controller: "MainController"
         })
         .otherwise({

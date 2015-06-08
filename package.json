@@ -1,5 +1,5 @@
 {
-  "name": "PranaYoga",
+  "name": "SolSupreme",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brunopgalvao/pranayoga.git"
+    "url": "https://github.com/brunopgalvao/SolSupreme.git"
   },
   "author": "Bruno Galvao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brunopgalvao/pranayoga/issues"
+    "url": "https://github.com/brunopgalvao/SolSupreme/issues"
   },
-  "homepage": "https://github.com/brunopgalvao/pranayoga",
+  "homepage": "https://github.com/brunopgalvao/SolSupreme",
   "dependencies": {
     "angular": "^1.3.15",
     "angular-animate": "^1.3.15",

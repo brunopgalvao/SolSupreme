@@ -1,17 +1,28 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
 body
 {
-  background: white;
-  font: 28px/1.55 Arial, Helvetica, sans-serif;
-  font-size: 19px;
-  padding: 0px 20px;
-  text-align: center;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  line-height: 1.4;
 }
 h1
 {
   border-bottom: 2px solid;
   border-color: black;
   border-top: 2px solid;
-  font: 18px/1 Arial, Helvetica, sans-serif;
+  font: 60px/1 Arial, Helvetica, sans-serif;
   font-weight: bold;
   letter-spacing: 1.5px;
   margin: 0px;
@@ -23,24 +34,97 @@ h1
 }
 h2
 {
-  font-size: 25px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans","Geneva","Verdana,sans-serif";
   margin-left: 7%;
   margin-right: 7%;
   margin-top: -5%;
   padding-left: 40px;
-  padding-top: 200px;
-  text-align: left;
+  padding-top: 100px;
+}
+.article-h2 {
+  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-top: 40px;
+  padding-top: 0;
+  margin-bottom: 8px;
+  color: rgba(0,0,0,0.8);
 }
 h3
 {
-  font-size: 25px;
   margin-bottom: 50px;
   margin-left: 7%;
   margin-right: 7%;
   margin-top: 5%;
   padding-left: 40px;
-  padding-top: 200px;
-  text-align: left;
+  padding-top: 0px;
+}
+.article-h3 {
+  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-top: 40px;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.8);
+  text-decoration: underline;
+  line-height: 1.15;
+}
+h4
+{
+  font-size: 32px;
+  margin-bottom: 50px;
+  padding-top: 0px;
+  display: block;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 5%;
+  padding-left: 40px;
+}
+.article-h4 {
+  font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.2;
+  color: rgba(0,0,0,0.44);
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-top: -0.2%;
+  font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+}
+.article-p {
+  font-size: 21px;
+  font-weight: 600;
+  padding-top: 0px;
+  display: block;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-left: 40px;
+}
+.article-body {
+  font-size: 22px;
+  padding-top: 0px;
+  display: block;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-left: 40px;
 }
 table, th, td
 {
@@ -54,6 +138,9 @@ table, th, td
 }
 footer
 {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
   position: bottom;
 }
 .email
