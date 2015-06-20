@@ -45,6 +45,10 @@ gulp.task('copy-html-files', function () {
   gulp.src('./app/**/*.html')
     .pipe(gulp.dest('dist/'));
 });
+gulp.task('copy-image-files', function () {
+  gulp.src('./app/images/*')
+    .pipe(gulp.dest('dist/images/'));
+});
 gulp.task('connect', function () {
   connect.server({
     root: 'app/',
@@ -83,5 +87,5 @@ gulp.task('default',
 );
 // build task
 gulp.task('build',
-  ['lint', 'minify-css', 'browserifyDist', 'copy-html-files', 'copy-bower-components', 'connectDist']
+  ['lint', 'minify-css', 'browserifyDist', 'copy-html-files', 'copy-image-files', 'copy-bower-components', 'connectDist']
 );
