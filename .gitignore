@@ -7,3 +7,5 @@ tmp
 .DS_Store
 bower_components/
 ~/src/solsupreme.github.io
+.publish
+app/js/bundled.js
