@@ -79,8 +79,11 @@ gulp.task('browserifyDist', function() {
   .pipe(concat('bundled.js'))
   .pipe(gulp.dest('./dist/js'))
 });
-
-
+gulp.task('copy-dist-files', function () {
+  gulp.src('./dist/*')
+    .pipe(gulp.dest('../solsupreme.github.io/'));
+});
+//.pipe(gulp.dest('app/images/'));
 // default task
 gulp.task('default',
   ['lint', 'browserify', 'connect']
@@ -88,4 +91,7 @@ gulp.task('default',
 // build task
 gulp.task('build',
   ['lint', 'minify-css', 'browserifyDist', 'copy-html-files', 'copy-image-files', 'copy-bower-components', 'connectDist']
+);
+gulp.task('deploy',
+  ['copy-dist-files']
 );
