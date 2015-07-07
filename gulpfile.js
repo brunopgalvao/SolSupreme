@@ -9,6 +9,7 @@ var minifyCSS = require('gulp-minify-css');
 var clean = require('gulp-clean');
 var browserify = require('gulp-browserify');
 var concat = require('gulp-concat');
+var ghPages = require('gulp-gh-pages');
 
 // tasks
 gulp.task('lint', function() {
@@ -79,19 +80,21 @@ gulp.task('browserifyDist', function() {
   .pipe(concat('bundled.js'))
   .pipe(gulp.dest('./dist/js'))
 });
-gulp.task('copy-dist-files', function () {
-  gulp.src('./dist/*')
-    .pipe(gulp.dest('../solsupreme.github.io/'));
+gulp.task('gh-pages', function() {
+  gulp.src('CNAME')
+    .pipe(gulp.dest('dist/'));
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages({remoteUrl: 'git@github.com:solsupreme/solsupreme.github.io.git', branch: 'master'}));
 });
 //.pipe(gulp.dest('app/images/'));
 // default task
 gulp.task('default',
-  ['lint', 'browserify', 'connect']
+  ['clean', 'lint', 'browserify', 'connect']
 );
 // build task
 gulp.task('build',
-  ['lint', 'minify-css', 'browserifyDist', 'copy-html-files', 'copy-image-files', 'copy-bower-components', 'connectDist']
+  ['clean', 'lint', 'minify-css', 'browserifyDist', 'copy-html-files', 'copy-image-files', 'copy-bower-components', 'connectDist']
 );
 gulp.task('deploy',
-  ['copy-dist-files']
+  ['clean', 'lint', 'minify-css', 'browserifyDist', 'copy-html-files', 'copy-image-files', 'copy-bower-components']
 );
