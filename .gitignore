@@ -9,3 +9,4 @@ bower_components/
 ~/src/solsupreme.github.io
 .publish
 app/js/bundled.js
+app/audio/om.mp3
