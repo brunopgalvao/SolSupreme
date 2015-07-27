@@ -10,6 +10,7 @@
     <!-- styles -->
     <link rel="stylesheet" href="css/custom.css">
     <base href="/">
+    <script src="//load.sumome.com/" data-sumo-site-id="25d1c968687967f00465130d9e245af7ccad4a0e6bd7730e58b13a849fb9810b" async="async"></script>
   </head>
   <body>
     <div class="container">
@@ -18,5 +19,22 @@
     </div>
     <!-- scripts -->
     <script src="./js/bundled.js"></script>
+    <script type="text/javascript">
+      function playAudio() {
+        var audio = document.getElementsByTagName("audio")[0];
+        var toggle = document.getElementById("surya").className
+        if (toggle === "paused") {
+          audio.play();
+          document.getElementById("surya").className = "playing";
+        } else {
+          audio.pause();
+          document.getElementById("surya").className = "paused";
+        }
+      }
+      function pauseAudio() {
+        var audio = document.getElementsByTagName("audio")[0];
+        audio.pause();
+      }
+    </script>
   </body>
 </html>
